@@ -1,0 +1,596 @@
+[
+  {
+    "_id": "local-seed-1",
+    "inputType": "internship_offer",
+    "companyName": "Apex Data Global Solutions",
+    "companyWebsite": "http://apexdata-fastjobs.site",
+    "recruiterContact": "hr_apex_jobs99@gmail.com | WhatsApp: +91 98765 43210",
+    "submittedText": "Subject: URGENT: Direct Selection for Remote Data Entry Internship - Stipend Rs 28,000/week!\n\nDear Candidate,\nCongratulations! Based on your resume, you have been shortlisted directly without any technical interview for our Part-Time Online Data Entry Internship.\n\nKey Benefits:\n- Weekly Stipend: Rs 28,000 directly to your bank account.\n- Flexible Hours: Just 1-2 hours daily from mobile or laptop.\n- 100% Work from Home.\n\nTo activate your corporate portal account and receive the training software pack, you must pay a mandatory one-time Refundable Security Registration Fee of Rs 1,499/- to our HR manager's UPI ID: apexhr@okaxis.\n\nHURRY! This offer expires in exactly 2 hours. If registration fee is not deposited immediately, your seat will be allocated to waiting candidates.\n\nSend payment screenshot on WhatsApp to +91 98765 43210 immediately.\nHR Team, Apex Data Global Solutions",
+    "riskScore": 100,
+    "riskCategory": "Critical",
+    "summary": "⚠️ Critical Threat Detected (Score: 100/100). This recruitment communication exhibits hallmark characteristics of advance-fee employment fraud, including upfront financial demands, brand impersonation, or suspicious payment channels. Do NOT transfer money or surrender personal banking credentials under any pretext.",
+    "indicators": [
+      {
+        "name": "Mandatory Upfront Payment or Security Deposit Demand",
+        "severity": "Critical",
+        "evidence": "Registration Fee",
+        "explanation": "Legitimate employers and campus placement drives NEVER charge candidates registration, training, or equipment fees. Asking for \"refundable\" security deposits is the #1 signature of employment fraud.",
+        "verificationAction": "Immediately refuse payment. Genuine companies provide all required equipment, software, and training at zero cost to the candidate.",
+        "confidence": 0.98
+      },
+      {
+        "name": "Direct Money Transfer / Personal UPI / Cryptocurrency Channel",
+        "severity": "Critical",
+        "evidence": "apexhr@okaxis",
+        "explanation": "Recruitment processes do not conduct payments via personal UPI handles (GPay, PhonePe, Paytm) or direct bank wire instructions.",
+        "verificationAction": "Do not transfer any funds. Real corporations maintain enterprise billing workflows and will never ask money to be sent to personal accounts.",
+        "confidence": 0.96
+      },
+      {
+        "name": "Artificial Urgency & Coercive Pressure Tactics",
+        "severity": "High",
+        "evidence": "HURRY",
+        "explanation": "Scammers manufacture artificial panic (e.g. 2-hour deadline, fear of losing seat, fake legal threats) to prevent students from consulting parents, mentors, or campus placement cells.",
+        "verificationAction": "Step back and pause. Formal job offers give candidates at least 3 to 14 business days to review employment terms.",
+        "confidence": 0.92
+      },
+      {
+        "name": "Official Offer Issued via Generic Free Email Service",
+        "severity": "Medium",
+        "evidence": "Recruiter email: hr_apex_jobs99@gmail.com",
+        "explanation": "While informal micro-startups sometimes use free emails, formal appointment letters and corporate agreements should originate from authenticated corporate domain names with SPF/DKIM records.",
+        "verificationAction": "Request the recruiter to send an email confirmation from their registered corporate domain before taking further action.",
+        "confidence": 0.82
+      },
+      {
+        "name": "Unconditional Direct Selection Without Assessment or Interview",
+        "severity": "High",
+        "evidence": "Direct Selection",
+        "explanation": "Genuine employers always conduct at least one interview, coding assessment, or background check before issuing a job or internship offer. \"Instant selection\" is used by scammers to flatter and bait victims.",
+        "verificationAction": "Inquire about the technical evaluation and request a live video interview with the hiring manager on Google Meet, Teams, or Zoom.",
+        "confidence": 0.89
+      },
+      {
+        "name": "Unrealistic Compensation for Minimal / Low-Skill Work",
+        "severity": "High",
+        "evidence": "Data Entry Internship - Stipend Rs 28,000/week",
+        "explanation": "Offering Rs 25,000/week or Rs 3,000/day for 1-2 hours of data entry, rating apps, or copy-pasting is statistically impossible in the real job market and is standard lure for advance-fee scams.",
+        "verificationAction": "Compare offered wages against Glassdoor, AmbitionBox, or Payscale industry standards for the same position.",
+        "confidence": 0.94
+      }
+    ],
+    "positiveSignals": [
+      "Transparent, multi-round technical assessment process outlined."
+    ],
+    "missingInformation": [
+      "No physical registered corporate office address or clear work mode mentioned.",
+      "Lack of technical prerequisites, required skillsets, or academic eligibility criteria."
+    ],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": false,
+      "officialSourceFound": false,
+      "sourceUrl": "http://apexdata-fastjobs.site",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-20T05:17:44.301Z",
+    "updatedAt": "2026-11-20T05:17:44.301Z"
+  },
+  {
+    "_id": "local-seed-2",
+    "inputType": "offer_letter",
+    "companyName": "Google Cloud Innovations (Impersonation)",
+    "companyWebsite": "http://careers-google-verify.xyz",
+    "recruiterContact": "recruitment.google.cloud.india@gmail.com",
+    "submittedText": "CONFIDENTIAL APPOINTMENT LETTER\nFrom: Google Cloud Innovations Recruitment Desk\nEmail: recruitment.google.cloud.india@gmail.com\n\nDear Applicant,\nWe are pleased to inform you that you have been selected for the position of Associate Cloud Engineer Intern with an annual CTC of INR 18,50,000/-.\n\nYou are requested to purchase an Apple MacBook Pro and Cisco VPN hardware router from our approved internal vendor list before Day 1. We will issue you a company reimbursement cheque of INR 1,20,000 upon receiving proof of payment.\n\nPlease transfer the equipment insurance security deposit of Rs 15,000/- directly to the account of Vendor Manager:\nBank: State Bank of India\nA/C: 34981029384\nIFSC: SBIN0004921\n\nFailure to transfer funds within 24 hours will cancel your employment contract and invite legal breach penalties.\n\nYours Sincerely,\nHuman Resources Division, Google Cloud",
+    "riskScore": 95,
+    "riskCategory": "Critical",
+    "summary": "⚠️ Critical Threat Detected (Score: 95/100). This recruitment communication exhibits hallmark characteristics of advance-fee employment fraud, including upfront financial demands, brand impersonation, or suspicious payment channels. Do NOT transfer money or surrender personal banking credentials under any pretext.",
+    "indicators": [
+      {
+        "name": "Mandatory Upfront Payment or Security Deposit Demand",
+        "severity": "Critical",
+        "evidence": "security deposit",
+        "explanation": "Legitimate employers and campus placement drives NEVER charge candidates registration, training, or equipment fees. Asking for \"refundable\" security deposits is the #1 signature of employment fraud.",
+        "verificationAction": "Immediately refuse payment. Genuine companies provide all required equipment, software, and training at zero cost to the candidate.",
+        "confidence": 0.98
+      },
+      {
+        "name": "Artificial Urgency & Coercive Pressure Tactics",
+        "severity": "High",
+        "evidence": "within 24 hours",
+        "explanation": "Scammers manufacture artificial panic (e.g. 2-hour deadline, fear of losing seat, fake legal threats) to prevent students from consulting parents, mentors, or campus placement cells.",
+        "verificationAction": "Step back and pause. Formal job offers give candidates at least 3 to 14 business days to review employment terms.",
+        "confidence": 0.92
+      },
+      {
+        "name": "Brand Impersonation (Google using Free Email Provider)",
+        "severity": "Critical",
+        "evidence": "Mentions Google but contact address is \"recruitment.google.cloud.india@gmail.com\"",
+        "explanation": "Major corporations like Google NEVER use free Gmail, Yahoo, or Outlook accounts for official candidate communications. Hiring emails originate exclusively from official company domains (e.g. @google.com).",
+        "verificationAction": "Cross-check on the official Google careers portal (https://careers.google.com). Any communication from a free email address claiming to be a Fortune 500 company is fraudulent.",
+        "confidence": 0.97
+      }
+    ],
+    "positiveSignals": [],
+    "missingInformation": [
+      "No physical registered corporate office address or clear work mode mentioned.",
+      "Lack of technical prerequisites, required skillsets, or academic eligibility criteria."
+    ],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": false,
+      "officialSourceFound": false,
+      "sourceUrl": "http://careers-google-verify.xyz",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "Official Google Careers Website",
+        "url": "https://careers.google.com",
+        "type": "official-portal"
+      },
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-20T00:17:44.304Z",
+    "updatedAt": "2026-11-20T00:17:44.304Z"
+  },
+  {
+    "_id": "local-seed-3",
+    "inputType": "job_posting",
+    "companyName": "NexVibe Media Labs",
+    "companyWebsite": "https://nexvibemedia.co",
+    "recruiterContact": "founder@nexvibemedia.co / Telegram: @nexvibehiring",
+    "submittedText": "Hiring Frontend React Intern (Remote) at NexVibe Media Labs!\n\nAbout Us:\nWe are a pre-seed stealth media tech startup building AI content curation tools.\n\nRole & Responsibilities:\n- Build responsive components using React and Tailwind CSS.\n- Connect REST APIs and handle state management.\n- Collaborate with designers on Figma.\n\nDuration: 3 Months\nStipend: Unpaid for the first 4 weeks during evaluation period. Performance-based incentive up to Rs 10,000/month thereafter depending on milestones.\nWorkload: 30 hours/week.\n\nRequirements:\n- Good knowledge of HTML, CSS, JavaScript, React.\n- Freshers and college students welcome.\n\nTo apply, please message our CTO on Telegram at @nexvibehiring with your GitHub profile and live project links.",
+    "riskScore": 33,
+    "riskCategory": "Moderate",
+    "summary": "⚠️ Moderate Ambiguity (Score: 33/100). The offer contains certain non-standard recruitment elements, such as uncompensated trial periods or third-party messaging. While not necessarily fraudulent, independent corporate identity verification is required before proceeding.",
+    "indicators": [
+      {
+        "name": "Hiring Channeled via Telegram / Anonymous Chat handles",
+        "severity": "High",
+        "evidence": "Telegram",
+        "explanation": "Telegram provides extreme anonymity and enables scammers to delete conversations and channels instantly without a trace. Corporate recruitment is never conducted solely over Telegram.",
+        "verificationAction": "Demand formal communication via official corporate email and corporate LinkedIn or career portals.",
+        "confidence": 0.93
+      },
+      {
+        "name": "Extended Unpaid Evaluation or Trial Period",
+        "severity": "Medium",
+        "evidence": "Unpaid for the first 4 weeks",
+        "explanation": "Some informal startups exploit student labor through promises of \"performance-based stipends later\" after weeks of unpaid work.",
+        "verificationAction": "Insist on a clearly documented internship agreement defining deliverables, working hours, and fair compensation terms from Day 1.",
+        "confidence": 0.85
+      }
+    ],
+    "positiveSignals": [],
+    "missingInformation": [
+      "No physical registered corporate office address or clear work mode mentioned."
+    ],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": false,
+      "officialSourceFound": false,
+      "sourceUrl": "https://nexvibemedia.co",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-19T19:17:44.305Z",
+    "updatedAt": "2026-11-19T19:17:44.305Z"
+  },
+  {
+    "_id": "local-seed-4",
+    "inputType": "recruiter_message",
+    "companyName": "Global AdMetrics Network",
+    "companyWebsite": "",
+    "recruiterContact": "+44 7891 234567 (WhatsApp)",
+    "submittedText": "Hello! I came across your profile and think you'd be a great fit for our digital media rating project.\n\nOur company helps boost merchant ratings on Google Play and ecommerce sites. You only need to review 10-15 mobile apps per day.\n\nEarnings:\n- Rs 1,500 to Rs 4,500 daily payouts.\n- Daily payout via UPI / Google Pay upon task submission.\n- No prior technical experience required. No resume needed.\n\nSimply click on the invite link to join our WhatsApp group and contact the mentor to receive your first test task. You do not have to pay anything to start.",
+    "riskScore": 75,
+    "riskCategory": "Critical",
+    "summary": "⚠️ Critical Threat Detected (Score: 75/100). This recruitment communication exhibits hallmark characteristics of advance-fee employment fraud, including upfront financial demands, brand impersonation, or suspicious payment channels. Do NOT transfer money or surrender personal banking credentials under any pretext.",
+    "indicators": [
+      {
+        "name": "Direct Money Transfer / Personal UPI / Cryptocurrency Channel",
+        "severity": "Critical",
+        "evidence": "Google Pay",
+        "explanation": "Recruitment processes do not conduct payments via personal UPI handles (GPay, PhonePe, Paytm) or direct bank wire instructions.",
+        "verificationAction": "Do not transfer any funds. Real corporations maintain enterprise billing workflows and will never ask money to be sent to personal accounts.",
+        "confidence": 0.96
+      },
+      {
+        "name": "Informal Hiring & Payment Screenshot Collection via WhatsApp",
+        "severity": "Medium",
+        "evidence": "join our WhatsApp group",
+        "explanation": "While recruiters may send courtesy reminders via WhatsApp, relying strictly on personal WhatsApp numbers without official enterprise correspondence is a significant vulnerability.",
+        "verificationAction": "Verify recruiter identity on LinkedIn and ask for a written offer on official letterhead from an authorized HR email.",
+        "confidence": 0.8
+      }
+    ],
+    "positiveSignals": [],
+    "missingInformation": [
+      "No verifiable company website URL provided in the submission.",
+      "No physical registered corporate office address or clear work mode mentioned.",
+      "Lack of technical prerequisites, required skillsets, or academic eligibility criteria."
+    ],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": false,
+      "officialSourceFound": false,
+      "sourceUrl": "",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "Official Google Careers Website",
+        "url": "https://careers.google.com",
+        "type": "official-portal"
+      },
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-19T14:17:44.305Z",
+    "updatedAt": "2026-11-19T14:17:44.305Z"
+  },
+  {
+    "_id": "local-seed-5",
+    "inputType": "job_posting",
+    "companyName": "Infosys Limited",
+    "companyWebsite": "https://www.infosys.com",
+    "recruiterContact": "offcampus.talent@infosys.com",
+    "submittedText": "INFOSYS OFF-CAMPUS RECRUITMENT DRIVE 2026\n\nRole: Specialist Programmer (SP) & Systems Engineer Specialist (SES)\nEligibility: B.Tech / B.E. / M.Tech / MCA (Graduating Class 2026/2027)\nLocations: Bengaluru, Pune, Hyderabad, Chennai, Mysuru\n\nCompensation:\n- Specialist Programmer: INR 9.5 LPA\n- Systems Engineer Specialist: INR 6.25 LPA\n\nSelection Process:\n1. Online Coding Assessment (Hands-on algorithmic programming on HackerEarth/official portal)\n2. Technical Interview (Virtual via Microsoft Teams)\n3. HR Round & Document Verification\n\nApplication Link:\nPlease register only on our official careers portal at: https://careers.infosys.com/jobseeker\nOfficial Application ID will be generated upon registration.\n\nIMPORTANT NOTICE FROM INFOSYS:\nInfosys never charges any fee at any stage of the recruitment process (application, test, interview, or offer). Any recruitment communication from Infosys will always originate from an official domain ending with @infosys.com. Report fraudulent communications to talentacquisition_fraud@infosys.com.",
+    "riskScore": 0,
+    "riskCategory": "Low",
+    "summary": "🛡️ Low Risk Indicators (Score: 0/100). The evaluated communication demonstrates standard hiring protocols, clear interview phases, and standard corporate anti-scam advisories. Always remember that a low AI risk score is an assessment and does not constitute a legal guarantee of company legitimacy.",
+    "indicators": [],
+    "positiveSignals": [
+      "Explicit corporate anti-fraud disclaimer stating the company never charges candidate fees.",
+      "Transparent, multi-round technical assessment process outlined.",
+      "Application directed to dedicated corporate portal: https://careers.infosys.com/job"
+    ],
+    "missingInformation": [
+      "No physical registered corporate office address or clear work mode mentioned."
+    ],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": true,
+      "officialSourceFound": true,
+      "sourceUrl": "https://www.infosys.com",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "Official Microsoft Careers Website",
+        "url": "https://careers.microsoft.com",
+        "type": "official-portal"
+      },
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-19T09:17:44.305Z",
+    "updatedAt": "2026-11-19T09:17:44.305Z"
+  },
+  {
+    "_id": "local-seed-6",
+    "inputType": "internship_offer",
+    "companyName": "Razorpay Software Pvt Ltd",
+    "companyWebsite": "https://razorpay.com",
+    "recruiterContact": "careers@razorpay.com",
+    "submittedText": "Razorpay Internship Program - Software Development Engineer Intern (Backend - Node.js/Go)\n\nLocation: Bangalore (Hybrid - 3 days in office)\nDuration: 6 Months (Full-time 40 hrs/week)\nStipend: Rs 45,000 per month + Free catered meals + Medical insurance cover\n\nAbout the Role:\nAs a backend intern in our Payments Infrastructure team, you will design scalable microservices handling millions of transactions per second.\n\nWhat We're Looking For:\n- Strong problem-solving abilities and fundamentals in Computer Science (Data Structures, Algorithms, OS, Networks).\n- Hands-on experience with Node.js, Go, or Java.\n- Familiarity with SQL/NoSQL databases and REST APIs.\n- Currently pursuing 3rd or 4th year B.Tech in CSE/IT.\n\nHiring Flow:\n- Initial resume screening\n- Online technical test (DSA & System Design basics)\n- 2 rounds of 45-minute live technical interviews with senior engineers\n- HR discussion\n\nApply via Razorpay Careers Portal: https://razorpay.com/jobs/sde-intern/\nWe never solicit fees, training charges, or equipment payments from applicants.",
+    "riskScore": 75,
+    "riskCategory": "Critical",
+    "summary": "⚠️ Critical Threat Detected (Score: 75/100). This recruitment communication exhibits hallmark characteristics of advance-fee employment fraud, including upfront financial demands, brand impersonation, or suspicious payment channels. Do NOT transfer money or surrender personal banking credentials under any pretext.",
+    "indicators": [
+      {
+        "name": "Mandatory Upfront Payment or Security Deposit Demand",
+        "severity": "Critical",
+        "evidence": "training charge",
+        "explanation": "Legitimate employers and campus placement drives NEVER charge candidates registration, training, or equipment fees. Asking for \"refundable\" security deposits is the #1 signature of employment fraud.",
+        "verificationAction": "Immediately refuse payment. Genuine companies provide all required equipment, software, and training at zero cost to the candidate.",
+        "confidence": 0.98
+      }
+    ],
+    "positiveSignals": [
+      "Explicit corporate anti-fraud disclaimer stating the company never charges candidate fees.",
+      "Transparent, multi-round technical assessment process outlined.",
+      "Application directed to dedicated corporate portal: https://razorpay.com/job",
+      "Standard professional corporate benefits and mentorship structure detailed."
+    ],
+    "missingInformation": [],
+    "verificationChecklist": [
+      {
+        "item": "Verify company domain and careers portal URL on official web search",
+        "completed": false
+      },
+      {
+        "item": "Search recruiter profile on LinkedIn and verify current employment title",
+        "completed": false
+      },
+      {
+        "item": "Confirm that zero fees (registration, laptop, portal, or security) are required",
+        "completed": false
+      },
+      {
+        "item": "Request a formal written offer letter on official letterhead from corporate domain email",
+        "completed": false
+      },
+      {
+        "item": "Check company registration on Ministry of Corporate Affairs (MCA) / regulatory directory",
+        "completed": false
+      },
+      {
+        "item": "Consult college placement officer or faculty advisor before signing agreements",
+        "completed": false
+      }
+    ],
+    "companyVerification": {
+      "isVerified": false,
+      "officialSourceFound": true,
+      "sourceUrl": "https://razorpay.com",
+      "verificationNotes": "Sample pre-loaded case"
+    },
+    "sourceLinks": [
+      {
+        "label": "Official Razorpay Careers Website",
+        "url": "https://razorpay.com/jobs",
+        "type": "official-portal"
+      },
+      {
+        "label": "National Cyber Crime Reporting Portal (Govt of India)",
+        "url": "https://cybercrime.gov.in",
+        "type": "reporting"
+      },
+      {
+        "label": "National Career Service Portal (NCS India)",
+        "url": "https://www.ncs.gov.in",
+        "type": "official-career"
+      },
+      {
+        "label": "Ministry of Corporate Affairs (MCA Company Master Data)",
+        "url": "https://www.mca.gov.in/mcafoportal/viewCompanyMasterData.do",
+        "type": "government-registry"
+      },
+      {
+        "label": "FTC Job Scams Consumer Advice",
+        "url": "https://consumer.ftc.gov/articles/job-scams",
+        "type": "advisory"
+      }
+    ],
+    "analysisProvider": "rule-engine",
+    "analysisStatus": "completed",
+    "createdAt": "2026-11-19T04:17:44.305Z",
+    "updatedAt": "2026-11-19T04:17:44.305Z"
+  }
+]

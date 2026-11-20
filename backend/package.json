@@ -1,0 +1,30 @@
+{
+  "name": "jobshield-ai-backend",
+  "version": "1.0.0",
+  "description": "JobShield AI - Backend REST API for Fake Job & Internship Scam Detection",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js",
+    "test": "node --test tests/*.test.js"
+  },
+  "keywords": [
+    "jobshield",
+    "cybersecurity",
+    "scam-detector",
+    "fake-job-detection",
+    "btech-project",
+    "ai"
+  ],
+  "author": "JobShield AI Team",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "express-rate-limit": "^7.5.0",
+    "helmet": "^8.0.0",
+    "mongoose": "^8.9.5"
+  }
+}
