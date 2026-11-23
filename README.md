@@ -32,7 +32,14 @@ The following screenshots showcase the JobShield AI interface. Click any image t
 <a href="./Screenshots/06-analysis-history.webp.png"><img src="./Screenshots/06-analysis-history.webp.png" alt="JobShield AI Analysis History" width="100%"></a>
 
 ### 7. 🛡️ Safety Guide
-<a href="./Screenshots/07-safety-guide.webp.png"><img src="./Screenshots/07-safety-guide.webp" alt="JobShield AI Safety Guide" width="100%"></a>
+
+<a href="./Screenshots/07-safety-guide.webp.png">
+  <img
+    src="./Screenshots/07-safety-guide.webp.png"
+    alt="JobShield AI Safety Guide"
+    width="100%"
+  >
+</a>
 
 ### 8. 🏗️ Security Architecture and Reporting
 <a href="./Screenshots/08-security-architecture-and-reporting.webp.png"><img src="./Screenshots/08-security-architecture-and-reporting.webp.png" alt="JobShield AI Security Architecture and Reporting" width="100%"></a>
