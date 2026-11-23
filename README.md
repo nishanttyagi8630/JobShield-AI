@@ -1,192 +1,468 @@
-# JobShield AI — AI-Powered Fake Job & Internship Scam Detector
+# 🛡️ JobShield AI
+### AI-Powered Job & Internship Scam Detection Platform
 
-> **B.Tech Computer Science & Engineering (CSE) Capstone / Mini Project**  
-> An explainable AI and heuristic security analysis platform designed to protect students and job seekers from predatory recruitment fraud, fake placement drives, registration-fee scams, and brand impersonation.
+**Protect your career. Detect suspicious job offers. Apply with confidence.**
 
----
+JobShield AI is a cybersecurity-focused web application designed to help students and job seekers identify potential recruitment scams. It analyzes job descriptions, internship offers, recruiter messages, emails, and appointment letters to identify suspicious patterns and provide explainable risk assessments.
 
-## 🛡️ Project Overview
-
-Every year, thousands of college students encounter fraudulent job postings, fake campus recruitment drives, and deceptive internship offers. Scammers exploit students' anxiety by demanding "refundable registration fees", issuing counterfeit appointment letters with free email addresses (e.g. `@gmail.com` claiming to be Google HR), or trapping them in Telegram task scams.
-
-**JobShield AI** provides a cybersecurity shield:
-- **Comprehensive Threat Scanning:** Evaluates pasted recruitment messages, emails, and offer letters across 15+ threat vectors.
-- **Calibrated Heuristic Risk Score (0–100):** Provides an explainable risk metric categorized into **Low**, **Moderate**, **High**, and **Critical**.
-- **Exact Evidence Slicing:** Extracts exact quoted text snippets and explains why each indicator represents a threat.
-- **Corporate Whitelist & Spoofing Detection:** Compares claimed companies against verified corporate registries to detect lookalike domains.
-- **Candidate Verification Checklist:** Guides students through practical verification actions (MCA registry lookup, LinkedIn verification, zero-fee validation).
-- **Official Reporting Links:** Direct integrations with the **National Cyber Crime Reporting Portal (1930 / cybercrime.gov.in)**, Ministry of Corporate Affairs, and National Career Service.
-- **Dual-Mode Persistence:** Seamlessly connects to MongoDB Atlas using Mongoose, while offering an automatic local file-persisted fallback for offline viva presentations.
+The platform combines a deterministic rule-based threat detection engine with optional Large Language Model (LLM) integration to identify red flags, assess company information, and recommend verification steps.
 
 ---
 
-## 💻 Tech Stack
+## 🎯 Problem Statement
+
+Students and fresh graduates are increasingly exposed to fraudulent job offers and internship scams, including:
+
+- 💸 Fake registration fees and refundable security deposits.
+- 🏢 Company impersonation and suspicious recruiter email addresses.
+- 📱 Recruitment conducted exclusively through WhatsApp or Telegram.
+- ⚠️ Unrealistic salary and stipend promises.
+- 🔐 Requests for OTPs, bank PINs, or original educational documents.
+- ⏳ High-pressure tactics designed to force immediate decisions.
+
+JobShield AI aims to help candidates recognize these warning signs before sharing sensitive information or making payments.
+
+---
+
+## ✨ Key Features
+
+### 🔍 1. Intelligent Job Offer Analysis
+- Analyze job descriptions, internship offers, recruiter messages, emails, and offer letters.
+- Detect suspicious recruitment patterns using configurable analysis logic.
+- Generate a risk score from **0 to 100**.
+- Display identified warning indicators with supporting evidence.
+- Provide actionable recommendations for further verification.
+
+### 🚨 2. Explainable Risk Assessment
+Instead of displaying only a risk score, JobShield AI highlights the suspicious text and explains why it may be concerning.
+
+| Risk Score | Risk Category | Suggested Response |
+|---|---|---|
+| 0–24 | 🟢 Low | Continue normal due diligence |
+| 25–49 | 🟡 Moderate | Verify suspicious details carefully |
+| 50–74 | 🟠 High | Investigate warning signs before proceeding |
+| 75–100 | 🔴 Critical | Treat the offer with extreme caution |
+
+*These categories are advisory assessments, not proof that an organization is fraudulent or legitimate.*
+
+### 🏢 3. Company Verification
+- Compare submitted company information against a curated directory of known enterprises.
+- Identify potential company-name and domain mismatches.
+- Highlight suspicious lookalike domains.
+- Display official-source information when available.
+- Provide safe manual verification steps.
+
+**Important:** A directory match does not independently guarantee that a particular job offer is genuine.
+
+### 📊 4. Analytics Dashboard
+- View recruitment analysis statistics.
+- Explore risk severity distributions.
+- Review recruitment-content channel breakdowns.
+- Visualize analysis metrics using charts.
+
+### 📋 5. Analysis History
+- Store previous analysis results.
+- Search records using relevant keywords.
+- Filter results by risk category and input type.
+- Sort records by creation date or risk score.
+- Open and delete individual analysis records.
+
+### ✅ 6. Candidate Verification Checklist
+Get practical verification steps to help investigate a suspicious offer before accepting it.
+
+### 🧠 7. Hybrid Analysis Engine
+- Deterministic rule-based detection engine.
+- Optional Google Gemini or OpenAI integration.
+- Automatic fallback to rule-based analysis when an LLM key is not configured or a network error occurs.
+- Backend-managed AI configuration to prevent frontend exposure of API credentials.
+
+### 💾 8. Flexible Data Persistence
+- MongoDB integration using Mongoose when configured.
+- Local JSON-based persistence fallback for development and demonstration.
+- Run the project locally without mandatory MongoDB Atlas configuration.
+
+### 🔐 9. Backend Security
+- Security headers using Helmet.
+- CORS configuration.
+- API rate limiting.
+- Request validation.
+- Environment-based configuration for sensitive credentials.
+
+---
+
+## 🖥️ Technology Stack
 
 ### Frontend
-- **Framework:** React.js (ES6+ JavaScript)
-- **Tooling & Bundler:** Vite
-- **Routing:** React Router v6
-- **HTTP Client:** Axios
-- **Visualizations:** Recharts (SVG Pie & Bar Charts)
-- **Icons:** Lucide React
-- **Design System:** Custom Dark Cyber SaaS Theme (Dark navy backgrounds `#080d1a`, electric blue `#38bdf8`, and cyber violet `#8b5cf6`)
+- React.js
+- Vite
+- React Router
+- Axios
+- Recharts
+- Lucide React
+- CSS
 
 ### Backend
-- **Runtime:** Node.js (v18+) using ES Modules (`type: "module"`)
-- **Server Framework:** Express.js REST API
-- **Security Middlewares:** Helmet (Security Headers), CORS Policy Engine, Express-Rate-Limit
-- **Database ODM:** Mongoose with compound indexes and timestamps
-- **Validation:** Custom request sanitization and schema validators
-- **AI Integration Adapter:** Dual-Tier Architecture supporting Google Gemini 1.5 Flash, OpenAI API, and an autonomous deterministic Heuristic Rule Engine.
+- Node.js
+- Express.js
+- JavaScript ES Modules
+- REST API architecture
+
+### Database & Storage
+- MongoDB
+- Mongoose
+- Local JSON persistence fallback
+
+### AI & Analysis
+- Rule-based threat detection
+- Optional Google Gemini integration
+- Optional OpenAI integration
+- Evidence-based risk indicators
+
+### Development Tools
+- Visual Studio Code
+- npm
+- Git
+- GitHub
+
+---
+
+## 🏗️ System Architecture
+
+```text
+                  ┌──────────────────────────┐
+                  │       USER / STUDENT     │
+                  └────────────┬─────────────┘
+                               │
+                               ▼
+                  ┌──────────────────────────┐
+                  │     REACT FRONTEND        │
+                  │                          │
+                  │  Landing Page             │
+                  │  Job Offer Analysis       │
+                  │  Risk Results             │
+                  │  Analytics Dashboard      │
+                  │  Analysis History         │
+                  └────────────┬─────────────┘
+                               │
+                         REST API / JSON
+                               │
+                               ▼
+                  ┌──────────────────────────┐
+                  │    NODE.JS + EXPRESS     │
+                  │                          │
+                  │  Input Validation        │
+                  │  Security Middleware     │
+                  │  API Rate Limiting       │
+                  └────────────┬─────────────┘
+                               │
+                ┌──────────────┼──────────────┐
+                ▼              ▼              ▼
+       ┌────────────────┐ ┌─────────────┐ ┌────────────────┐
+       │ Rule-Based     │ │ Company     │ │ Optional LLM   │
+       │ Threat Engine  │ │ Verification│ │ Integration    │
+       └────────┬───────┘ └──────┬──────┘ └───────┬────────┘
+                └──────────────┬─┴────────────────┘
+                               ▼
+                  ┌──────────────────────────┐
+                  │     STORAGE LAYER        │
+                  │                          │
+                  │ MongoDB / Local JSON     │
+                  └────────────┬─────────────┘
+                               ▼
+                  ┌──────────────────────────┐
+                  │  RISK RESULTS & GUIDANCE │
+                  └──────────────────────────┘
+```
 
 ---
 
 ## 📁 Project Structure
 
-```
+```text
 JobShield-AI/
-|-- backend/
-|   |-- src/
-|   |   |-- config/          # Environment variables & DB connection
-|   |   |-- controllers/     # Analysis, company verification & health controllers
-|   |   |-- middleware/      # Helmet, CORS, Rate Limiters, Error handlers
-|   |   |-- models/          # Mongoose Analysis schema and indexes
-|   |   |-- routes/          # REST API route definitions
-|   |   |-- services/        # Rule engine, AI adapter, Company verifier, Storage service
-|   |   |-- utils/           # Preset sample cases & helpers
-|   |   |-- validators/      # Input validation logic
-|   |   |-- app.js           # Express app assembly
-|   |   |-- server.js        # Server bootstrap & graceful shutdown
-|   |-- tests/               # 18 automated unit and integration tests
-|   |-- .env.example         # Environment template
-|   |-- package.json
-|
-|-- frontend/
-|   |-- public/              # Static assets & favicon
-|   |-- src/
-|   |   |-- assets/          # SVG graphics
-|   |   |-- components/      # Navbar, Footer, RiskGauge, IndicatorCard, Checklist
-|   |   |-- pages/           # Landing, Dashboard, Analyze, Results, History, About
-|   |   |-- services/        # Axios API client
-|   |   |-- utils/           # 6 one-click test scenarios
-|   |   |-- App.jsx          # Route configuration
-|   |   |-- main.jsx         # React DOM mount
-|   |   |-- index.css        # Cyber Dark Design System
-|   |-- .env.example
-|   |-- package.json
-|   |-- vite.config.js
-|
-|-- docs/
-|   |-- PROJECT_OVERVIEW.md  # Abstract, architecture & heuristic scoring formula
-|   |-- API_DOCUMENTATION.md # REST endpoints specification
-|   |-- DATABASE_SCHEMA.md   # Mongoose model & indexing documentation
-|   |-- TESTING_GUIDE.md     # Test execution & QA guide
-|   |-- VIVA_QUESTIONS.md    # 25+ technical Q&A for college defense
-|
-|-- .gitignore
-|-- README.md
+│
+├── backend/
+│   ├── data/
+│   ├── src/
+│   │   ├── config/
+│   │   ├── controllers/
+│   │   ├── middleware/
+│   │   ├── routes/
+│   │   ├── services/
+│   │   ├── validators/
+│   │   ├── app.js
+│   │   └── server.js
+│   ├── tests/
+│   ├── .env.example
+│   └── package.json
+│
+├── frontend/
+│   ├── public/
+│   ├── src/
+│   │   ├── assets/
+│   │   ├── components/
+│   │   ├── pages/
+│   │   ├── services/
+│   │   ├── utils/
+│   │   ├── App.jsx
+│   │   └── main.jsx
+│   ├── .env.example
+│   └── package.json
+│
+├── docs/
+│   ├── PROJECT_OVERVIEW.md
+│   ├── API_DOCUMENTATION.md
+│   ├── DATABASE_SCHEMA.md
+│   ├── TESTING_GUIDE.md
+│   └── VIVA_QUESTIONS.md
+│
+├── .gitignore
+└── README.md
 ```
 
 ---
 
-## 🚀 Step-by-Step Installation & Run Guide
+## ⚙️ Installation & Setup
 
-### 1. Prerequisites
-- **Node.js:** v18.0.0 or higher (`node -v`)
-- **npm:** v9.0.0 or higher (`npm -v`)
-- **MongoDB (Optional):** MongoDB Atlas connection string or local MongoDB instance. If not configured, the backend automatically runs in **Local Persistence Mode** with zero manual setup required.
+### Prerequisites
 
-### 2. Setup the Backend
-Open a terminal in the `backend/` directory:
+Install the following before running the application:
+
+- Node.js 18 or higher
+- npm
+- Git
+- A code editor such as Visual Studio Code
+
+MongoDB and an external AI API key are optional for local development.
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/nishanttyagi8630/JobShield-AI.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd JobShield-AI
+```
+
+### 2. Configure the Backend
+
+Open a terminal:
+
 ```bash
 cd backend
 npm install
 ```
 
-Configure your environment variables:
-```bash
-# Copy template to active .env
-cp .env.example .env
-```
-*(Optional)* Add your `MONGODB_URI` or `AI_API_KEY` (Gemini or OpenAI) in `backend/.env`. If left blank, the app will run with the deterministic heuristic rule engine and local persistence store.
+Create your local environment file in the backend directory.
 
-Start the backend server:
+**Windows PowerShell:**
+
+```powershell
+Copy-Item .env.example .env
+```
+
+Open `backend/.env` and configure the following variables as required:
+
+```env
+PORT=5000
+NODE_ENV=development
+MONGODB_URI=
+FRONTEND_URL=http://localhost:5173
+
+AI_PROVIDER=gemini
+AI_API_KEY=
+AI_MODEL=gemini-1.5-flash
+```
+
+**Configuration notes:**
+
+- Leave `MONGODB_URI` empty to use the project's local persistence fallback.
+- Configure a valid MongoDB connection string if you want to use MongoDB.
+- Configure an appropriate provider and API key if you want to enable external LLM analysis.
+- Keep API keys and database credentials private. Never commit your actual `.env` file.
+
+Start the backend:
+
+```bash
+npm run dev
+```
+
+Alternatively, run:
+
 ```bash
 npm start
 ```
-The backend will launch on `http://localhost:5000`. You can verify health at `http://localhost:5000/api/health`.
 
-### 3. Setup the Frontend
-Open a new terminal in the `frontend/` directory:
+The backend is configured to use:
+
+`http://localhost:5000`
+
+Check the health endpoint:
+
+`http://localhost:5000/api/health`
+
+### 3. Configure the Frontend
+
+Open a second terminal from the project root:
+
 ```bash
 cd frontend
 npm install
+```
+
+Create the frontend environment file:
+
+```powershell
+Copy-Item .env.example .env
+```
+
+The default local configuration is:
+
+```env
+VITE_API_BASE_URL=http://localhost:5000/api
+```
+
+Start the frontend development server:
+
+```bash
 npm run dev
 ```
-The frontend will start on `http://localhost:5173`. Open your browser and navigate to `http://localhost:5173`.
+
+Open the local URL displayed in your terminal. The default Vite address is:
+
+`http://localhost:5173`
+
+### 4. Run the Complete Application
+
+Keep both terminals running:
+
+| Component | Command | Default Address |
+|---|---|---|
+| Backend | `npm run dev` inside `backend/` | `http://localhost:5000` |
+| Frontend | `npm run dev` inside `frontend/` | `http://localhost:5173` |
+
+The frontend communicates with the backend through the configured API base URL.
 
 ---
 
-## 🧪 Running Automated Tests
+## 🔌 API Overview
 
-JobShield AI includes 18 native unit and integration tests covering the threat detection engine, company verifier, and REST API routes:
+The backend exposes REST API endpoints for threat analysis, company verification, history management, and analytics.
+
+Base URL:
+
+```text
+http://localhost:5000/api
+```
+
+| Method | Endpoint | Purpose |
+|---|---|---|
+| GET | `/health` | Check backend status |
+| POST | `/analyze` | Analyze a job or internship offer |
+| POST | `/verify-company` | Check company information |
+| GET | `/analyses` | Retrieve and filter analysis history |
+| GET | `/analyses/:id` | Retrieve an individual analysis |
+| DELETE | `/analyses/:id` | Delete an analysis record |
+| GET | `/stats` | Retrieve dashboard statistics |
+
+See [`docs/API_DOCUMENTATION.md`](docs/API_DOCUMENTATION.md) for endpoint details, request formats, and example responses.
+
+---
+
+## 🧪 Testing
+
+JobShield AI includes automated backend unit and integration tests.
+
+Run the backend test suite:
 
 ```bash
 cd backend
 npm test
 ```
 
-Expected output:
-```
-✔ JobShield AI - Backend REST API Integration Tests (10 tests passing)
-✔ JobShield AI - Company Verification Service Tests (4 tests passing)
-✔ JobShield AI - Rule Engine Detection Tests (4 tests passing)
-ℹ tests 18
-ℹ pass 18
-ℹ fail 0
-```
+The project documentation describes 18 tests covering the REST API, company verification service, and rule-based detection engine.
 
-To verify the frontend production build:
+To create a production build of the frontend:
+
 ```bash
 cd frontend
 npm run build
 ```
 
----
+A successful build verifies that Vite can compile the frontend application.
 
-## 🎬 College Presentation & Demo Script
-
-When demonstrating JobShield AI to your project guide or external examiner, follow this 4-minute demonstration flow:
-
-1. **Step 1: Introduction (Landing Page)**
-   - Open `http://localhost:5173`.
-   - Explain the problem: Students being lured into ₹1,500 registration-fee scams or fake appointment letters.
-   - Point out the cybersecurity dark UI, anti-scam philosophy, and system statistics.
-
-2. **Step 2: Instant 1-Click Scan (Analyze Page)**
-   - Click **"Scan Offer"** in the top navigation.
-   - Click the **"Data Entry - UPI Fee Scam"** quick sample button.
-   - Notice how the form auto-fills with an urgent message demanding a ₹1,499 refundable registration fee to a personal UPI ID.
-   - Click **"Run Threat Analysis"**.
-
-3. **Step 3: Explainable Results (Results Page)**
-   - Highlight the **Risk Gauge (85/100 - Critical Risk)**.
-   - Review the **Flagged Threat Indicators**: point out the exact quoted evidence snippet ("Pay Rs 1,499 refundable registration fee") and the recommended action ("Immediately refuse payment").
-   - Demonstrate the interactive **Candidate Verification Checklist** by checking off items.
-
-4. **Step 4: Legitimate Campus Drive Comparison**
-   - Click **"Analyze Another Offer"**.
-   - Click **"Infosys Verified Off-Campus Drive"** and submit.
-   - Show how the score drops to **Low Risk (0–24)**, and point out how the engine detected positive protective signals like the corporate zero-fee disclaimer and official careers portal.
-
-5. **Step 5: Threat Analytics (Dashboard)**
-   - Navigate to **"Dashboard"** to display real-time SVG charts powered by Recharts (Risk severity distribution & content channels breakdown).
-
-6. **Step 6: History & Record Management**
-   - Navigate to **"History"** to demonstrate multi-parameter filtering, keyword searching, and record deletion.
+For more details, see [`docs/TESTING_GUIDE.md`](docs/TESTING_GUIDE.md).
 
 ---
 
-## ⚖️ Ethical & Academic Disclaimer
+## 📚 Project Documentation
 
-JobShield AI provides **heuristic risk assessments and educational threat detection**. An automated AI score does **not** constitute legal proof that an organization is fraudulent or genuine. When evaluating employment opportunities, candidates must always perform independent due diligence through official government registries (e.g. Ministry of Corporate Affairs) and college placement advisors.
+The repository includes additional technical documentation:
+
+- [Project Overview & Architecture](docs/PROJECT_OVERVIEW.md)
+- [REST API Documentation](docs/API_DOCUMENTATION.md)
+- [Database Schema](docs/DATABASE_SCHEMA.md)
+- [Testing Guide](docs/TESTING_GUIDE.md)
+- [Technical Viva Questions](docs/VIVA_QUESTIONS.md)
+
+These documents explain the architecture, API behavior, data model, testing process, and project concepts.
+
+---
+
+## 🚀 Future Enhancements
+
+Potential future improvements include:
+
+- More extensive verified-company data sources.
+- Additional detection rules for emerging recruitment scams.
+- Expanded support for different recruitment document formats.
+- Improved multilingual analysis for Indian job seekers.
+- Additional explainability and evidence visualization.
+- Deployment with production monitoring and secure cloud storage.
+- More comprehensive automated testing.
+
+These are potential enhancements and should not be interpreted as features already implemented.
+
+---
+
+## 🎓 Project Information
+
+**Project Name:** JobShield AI  
+**Project Type:** AI-Assisted Cybersecurity Web Application  
+**Domain:** Artificial Intelligence, Web Development & Recruitment Scam Detection  
+**Frontend:** React.js + Vite  
+**Backend:** Node.js + Express.js  
+**Storage:** MongoDB / Local JSON Persistence  
+
+---
+
+## ⚖️ Disclaimer
+
+JobShield AI is an educational and informational tool intended to help users identify potentially suspicious recruitment communications.
+
+Its risk scores and indicators are based on configured detection rules and, when enabled, optional AI analysis. Results may be incomplete or inaccurate.
+
+A high score does not prove that a company is fraudulent, and a low score does not guarantee that an offer is genuine.
+
+Always verify job opportunities independently through official company career portals and trusted sources. Never share OTPs, banking PINs, passwords, or make payments solely because a recruiter requests them.
+
+---
+
+## 👨‍💻 Author
+
+**Nishant Tyagi**
+
+GitHub: [@nishanttyagi8630](https://github.com/nishanttyagi8630)
+
+Explore the repository, review the code, and contribute suggestions to improve recruitment scam awareness.
+
+---
+
+### ⭐ Support the Project
+
+If you find JobShield AI useful, consider giving the repository a **star ⭐** on GitHub.
+
+**Stay alert. Verify before you trust. Protect your career with JobShield AI.**
