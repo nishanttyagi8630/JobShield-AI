@@ -9,28 +9,40 @@ The platform combines a deterministic rule-based threat detection engine with op
 
 ---
 
-📸 Application Screenshots
-The following screenshots showcase the JobShield AI interface. Click any image to open the full-size version.
-1. 🏠 Homepage
-<a href="./screenshots/01-homepage.webp"><img src="./screenshots/01-homepage.webp" alt="JobShield AI Homepage" width="100%"></a>
-2. 📊 Threat Intelligence Dashboard
-<a href="./screenshots/02-threat-intelligence-dashboard.webp"><img src="./screenshots/02-threat-intelligence-dashboard.webp" alt="JobShield AI Threat Intelligence Dashboard" width="100%"></a>
-3. 📈 Recent Analysis Reports
-<a href="./screenshots/03-recent-analysis-reports.webp"><img src="./screenshots/03-recent-analysis-reports.webp" alt="JobShield AI Recent Analysis Reports" width="100%"></a>
-4. 🔍 Analyze Job or Internship Offer
-<a href="./screenshots/04-analyze-offer-page.webp"><img src="./screenshots/04-analyze-offer-page.webp" alt="JobShield AI Analyze Offer Page" width="100%"></a>
-5. 📝 Recruitment Analysis Form
-<a href="./screenshots/05-recruitment-analysis-form.webp"><img src="./screenshots/05-recruitment-analysis-form.webp" alt="JobShield AI Recruitment Analysis Form" width="100%"></a>
-6. 🗂️ Analysis History
-<a href="./screenshots/06-analysis-history.webp"><img src="./screenshots/06-analysis-history.webp" alt="JobShield AI Analysis History" width="100%"></a>
-7. 🛡️ Safety Guide
-<a href="./screenshots/07-safety-guide.webp"><img src="./screenshots/07-safety-guide.webp" alt="JobShield AI Safety Guide" width="100%"></a>
-8. 🏗️ Security Architecture and Reporting
-<a href="./screenshots/08-security-architecture-and-reporting.webp"><img src="./screenshots/08-security-architecture-and-reporting.webp" alt="JobShield AI Security Architecture and Reporting" width="100%"></a>
-9. 🚨 Scam Detection Features
-<a href="./screenshots/09-scam-detection-features.webp"><img src="./screenshots/09-scam-detection-features.webp" alt="JobShield AI Scam Detection Features" width="100%"></a>
-10. ⚙️ How It Works
-<a href="./screenshots/10-how-it-works.webp"><img src="./screenshots/10-how-it-works.webp" alt="How JobShield AI Works" width="100%"></a>
+## 📸 Application Screenshots
+
+The following screenshots showcase the JobShield AI interface. Click any image to view it in full size.
+
+### 1. 🏠 Homepage
+<a href="./Screenshots/01-homepage.webp.png"><img src="./Screenshots/01-homepage.webp.png" alt="JobShield AI Homepage" width="100%"></a>
+
+### 2. 📊 Threat Intelligence Dashboard
+<a href="./Screenshots/02-threat-intelligence-dashboard.webp.png"><img src="./Screenshots/02-threat-intelligence-dashboard.webp.png" alt="JobShield AI Threat Intelligence Dashboard" width="100%"></a>
+
+### 3. 📈 Recent Analysis Reports
+<a href="./Screenshots/03-recent-analysis-reports.webp.png"><img src="./Screenshots/03-recent-analysis-reports.webp.png" alt="JobShield AI Recent Analysis Reports" width="100%"></a>
+
+### 4. 🔍 Analyze Job or Internship Offer
+<a href="./Screenshots/04-analyze-offer-page.webp.png"><img src="./Screenshots/04-analyze-offer-page.webp.png" alt="JobShield AI Analyze Offer Page" width="100%"></a>
+
+### 5. 📝 Recruitment Analysis Form
+<a href="./Screenshots/05-recruitment-analysis-form.webp.png"><img src="./Screenshots/05-recruitment-analysis-form.webp.png" alt="JobShield AI Recruitment Analysis Form" width="100%"></a>
+
+### 6. 🗂️ Analysis History
+<a href="./Screenshots/06-analysis-history.webp.png"><img src="./Screenshots/06-analysis-history.webp.png" alt="JobShield AI Analysis History" width="100%"></a>
+
+### 7. 🛡️ Safety Guide
+<a href="./Screenshots/07-safety-guide.webp.png"><img src="./Screenshots/07-safety-guide.webp" alt="JobShield AI Safety Guide" width="100%"></a>
+
+### 8. 🏗️ Security Architecture and Reporting
+<a href="./Screenshots/08-security-architecture-and-reporting.webp.png"><img src="./Screenshots/08-security-architecture-and-reporting.webp.png" alt="JobShield AI Security Architecture and Reporting" width="100%"></a>
+
+### 9. 🚨 Scam Detection Features
+<a href="./Screenshots/09-scam-detection-features.webp.png"><img src="./Screenshots/09-scam-detection-features.webp.png" alt="JobShield AI Scam Detection Features" width="100%"></a>
+
+### 10. ⚙️ How It Works
+<a href="./Screenshots/10-how-it-works.webp.png"><img src="./Screenshots/10-how-it-works.webp.png" alt="How JobShield AI Works" width="100%"></a>
+
 Note: Keep the image filenames and extensions exactly as shown above inside the repository's root-level screenshots/ folder. GitHub paths are case-sensitive.
 
 ## 🎯 Problem Statement
